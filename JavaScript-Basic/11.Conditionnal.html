@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // Condition Statement
+        // ตัวอย่างแรก
+        let age = 17;
+
+        if (age >= 18) {
+            console.log("You arew an adult."); // หากเงื่อนไขเป็นจริง
+        } else {
+            console.log("You are not an adult."); // หากเงื่อนไขไม่เป็นจริง
+        }
+        // output[You are not an adult]
+
+        // ตัวอย่างที่สอง
+        let score = 85;
+
+        if (score >= 90) {
+            console.log("Grade: A");
+        } else if (score >= 80) {
+            console.log("Grade: B");
+        } else if (score >= 70) {
+            console.log("Grade: C");
+        } else if (score >= 60) {
+            console.log("Grade: D");
+        } else {
+            consloe.log("Grade: F");
+        }
+        // output[Grade: B]
+
+        // Ternary Operator => เขียน if , else แบบสั้นๆ
+        let age1 = 17;
+        let message = (age1 >= 18) ? "You arew an adult." : "You are not an adult.";
+        //output[You are not an adult.]
+
+
+
+
+        // Switch Statement => คล้าย if,else
+        let day = 3;
+        let dayName;
+
+        switch(day) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break
+            case 4:
+                dayName = "Thursday";
+                break
+            case 5:
+                dayName = "Friday";
+                break
+            case 6:
+                dayName = "Saturday";
+                break
+            case 7:
+                dayName = "Sunday";
+                break
+            default: // กำหนดเป็น default เมื่อไม่เข้าเวื่อนไขใดเลย
+                dayName = "Invalid day";
+        }
+        console.log(dayName);
+        // output(3)
+
+    </script>
+    
+</body>
+</html>

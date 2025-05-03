@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ไม่ต้องการเพิ่มขนาดกล่อง */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    width: 360px;
+    margin: 2rem auto;
+    height: 560px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px; /* ความโค้งขแงมุม */
+    position: relative; /* ต้องการให้ classmain อ้างอิงกับ classtag */
+}
+
+.tag {
+    position: absolute;
+    top: -15px;
+    z-index: 999; /* layer ยิ่งค่ามาก ยิ่งอยู่ข้างหน้า */
+    background: tomato;
+    left: 50%;
+    transform: translate(-50%);
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    height: 250px;
+    background-color: #fff;
+    overflow: hidden; /* ตัดส่วนเกินออก */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+}
+
+.img img { /* เข้าถึงคลาสก่อน จากนั้นเข้าถึงแท็ก */
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+    border-bottom: 2px solid #e5e5e5;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* ถ้าไม่กำหนด ตัวคอนเท้นจะต่อกัน หรือ สามารถใช้วิธีสร้าง div คลุมอีกชั้น*/
+    padding: 1rem;
+}
+
+.content h3 {
+    border-bottom: 1px solid #fff;
+}
+
+.content h1 {
+    margin: 1rem;
+}
+
+.content p {
+    color: #9f9f9f;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* ชิดซ้าย-ขวา */
+    /* background: red; */
+    align-items: center;
+    height: 6opx;
+    margin: 20px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-left p {
+    margin-left: .5rem;
+}
+
+.footer-right {
+    padding-right: 1rem;
+}
+
+

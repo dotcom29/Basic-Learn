@@ -1,0 +1,55 @@
+/* สร้างตัวแปร => ประโยชน์คือ แก้ทีเดียวรู้เรื่อง*/
+:root {
+    --coler: #17be62;
+    --container-width: 1140px;
+}
+
+/* Universal Selector => เลือก Element ทุกตัว */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* การใช้ pading จะทำให้ขนาดขอบกว้างขึ้น จึงต้องเขียน box-sizing ขึ้นเพื่อช่วยลดขนาดให้เท่าเดิมเหมือนตอนยังไม่เพิ่ม pading */
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+}
+
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+}
+
+.box5 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+}

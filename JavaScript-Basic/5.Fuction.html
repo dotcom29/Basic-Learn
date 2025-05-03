@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // แบบ return
+        function myFunction(num1 , num2) { // รับค่า (num1 , num2)
+            return num1 * num2; // return ค่า
+        }
+            // วิธีที่ 1
+                console.log(myFunction(10 , 150)); // เรียกใช้ function และทำการส่งค่า
+            // วิธีที่ 2
+            // let sum = myFunction(10 , 150);
+            // console.log(sum); , แสดงผล
+
+
+
+        // แบบไม่ return
+        function meFunction(num1 , num2) {
+            let name = "dotcom" // local function => เรียกใช้ข้างนอกปีกกาไม่ได้
+            console.log("Inside function" , name) // แสดงผล
+        }
+            meFunction();
+            console.log("Outside function" , name) // แสดงผล
+            
+    </script>
+    
+</body>
+</html>

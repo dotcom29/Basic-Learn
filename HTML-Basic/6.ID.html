@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- HTML ID
+    - คือ attributes หรือ คุณสมบัติของ HTML ที่เราสามารใช้ระบุ ID เฉพาะให้กับแท็ก HTML
+    - จะถูกใช้เพื่ออ้างอิงไปที่ไฟล์ CSS ได้และสามารถใช้กับ JavaScript เพื่อเข้าถึง Element HTNL ได้
+    - ต้องมีแค่ตัวเดียว
+    - ไม่สามารถใช้ซ้ำได้ ซึ่งต่างจาก class ที่สามารถใช้ซ้ำได้ 
+    -->
+
+    <!-- CSS -->
+    <style>
+        #myBox {
+            width: 100px;
+            height: 100px;
+            background-color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="myBox">
+
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        let myBox = document.getElementById("myBox");
+
+        myBox.addEventListener("click", function() {
+            alert("Hello World");
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+
+        //Array ตัวแปรพิเศษที่สามารถเก็บค่าได้มากกว่าหนึ่งค่า เช่น
+        //const langs = ["HTML", "CSS", "JS"];
+
+        const langs = ["HTML", "CSS", "JS"]; // Array Literal
+
+        console.log(langs);
+        console.log(langs[1]); // เข้าถึง CSS index ตำแหน่งที่ 2
+        console.log(langs[0] = 100) // เปลี่ยน "HTML" => 100
+        console.log(langs.length); // เช็คจำนวนข้อมูล
+
+        const cars = new Array("Honda", "Toyota", "Nissan"); // new Keyword
+        console.log(cars);
+
+        // Array Method
+        console.log(langs.push("Banana")); // การเพิ่มข้อมูลส่วนท้าย
+        console.log(langs);
+        console.log(langs.pop()); // การลบข้อมูลส่วนท้าย
+        console.log(langs);
+        console.log(langs.shift()); // การลบข้อมูลส่วนหน้าสุด
+        console.log(langs);
+        console.log(langs.unshift("Naruto")); // การเพิ่มข้อมูลส่วนหน้าสุด
+        console.log(langs);
+
+        // การรวม Array
+        const concatArrays = langs.concat(cars);
+        console.log(concatArrays);
+
+    </script>
+    
+</body>
+</html>

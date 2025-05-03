@@ -1,0 +1,53 @@
+/* สร้างตัวแปร => ประโยชน์คือ แก้ทีเดียวรู้เรื่อง*/
+:root {
+    --coler: #17be62;
+    --container-width: 1140px;
+}
+
+/* Nesting = Selector ซ้อน Selector */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    position: relative;
+
+    .box {
+        width: 300px;
+        height: 100px;
+        border: 1px solid red;
+        padding: 20px;
+        box-sizing: border-box;
+            p {
+                color: azure;
+                background-color: black;
+            }
+    }
+
+    .box2 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+    }
+
+    .box3 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+    }
+
+    .box4 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+    }
+
+    .box5 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--coler); /* กำหนดตัวแปร */
+    margin: 20px;
+    }
+}

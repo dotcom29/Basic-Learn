@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // forEach()
+        // ประมวลผล function ที่ให้มาหนึ่งครั้งสำหรับแต่ละ array element
+        // ไม่ return array ใหม่
+        const number = [1,2,3,4,5];
+        number.forEach(function(number) {
+            console.log(number);
+            // output[1,2,3,4,5]
+        })
+
+        // map()
+        // สร้าง array ใหม่พร้อมกับค่า element ใหม่ที่ถูกเปลี่ยนแปลง
+        const numbers1 = [1,2,3,4,5];
+        const doubled = numbers1.map(function(number) {
+            return number * 2;
+        })
+        console.log(doubled);
+        // output[2,4,6,8,10]
+
+        // filter()
+        // สร้าง array ใหม่ที่มี element ทั้งหมดที่ผ่านการทดสอบการใช้งานโดยฟังก์ชันที่ให้มา
+        // return array ใหม่พร้อมกับ element ที่ตรงตามเงื่อนไข
+        const numbers2 = [1,2,3,4,5];
+        const even = numbers2.filter(function(number) {
+            return number % 2 === 0; // number % 2 ลงตัว
+        })
+        console.log(even);
+        // output[2,4]
+
+        // reduce()
+        // มักใช้สำหรับการสรุปค่าหรือสะสสมผลลัพธ์
+        const numbers3 = [1,2,3,4,5];
+        const sum = numbers3.reduce(function(total, number) {
+            console.log(total, number); // ดูวิธีการคำนวน
+            return total + number;
+            // 0 + 1 = 1
+            // 1 + 2 = 3
+            // 3 + 3 = 6
+            // 6 + 4 = 10
+            // 10 + 5 = 15 ,sum = 15
+        }, 0); // ค่าเริ่มต้น = 0
+        console.log(sum);
+
+        // some()
+        // ทกสอบว่า element อย่างน้อยหนึ่งรายการใน array ผ่านการทดสอบที่ใช้โดยฟังก์ชันที่ให้มาหรือไม่
+        // return ค่า ture หากมี element อย่างน้อยหนึ่งรายการตรงตามเงื่อนไข ไม่เช่นนั้นจะ false
+        const numbers4 = [1,2,3,4,5];
+        const hasEven = numbers4.some(function(number) {
+            return number % 2 === 0;
+        });
+        console.log(hasEven);
+        // output[true]
+
+        // every()
+        // return ค่า ture หาก element ทั้งหมดตรงตามเงื่อนไข ไม่เช่นนั้นจะ false
+        const numbers5 = [1,2,3,4,5];
+        const all = numbers5.every(function(number) {
+            return number > 0;
+        });
+        console.log(all);
+        // output[true]
+
+        // find()
+        // return ค่าของ element แรกใน array ที่ตรงกับฟังก์ชันการทดสอบที่ระบุ
+        // หากไม่มี element ใดตรงตามเงื่อนไข ก็จะ return ค่า undefined
+        const numbers6 = [1,2,3,4,5];
+        const firsEven = numbers6.find(function(number) {
+            return number % 2 === 0;
+        });
+        console.log(firsEven);
+        // output[2] , ตัวแรกที่มันเจอคือ 2 ถ้าไม่มี 2 ตัวต่อไปก็จะเป็น 4
+
+        // findIndex()
+        // return ค่า index ของ element ตัวแรกใน array ที่ตรงกับฟังชันการทดสอบที่ให้มา
+        // หากไม่มี element ใดตรงตามเงื่อนไข ก็จะ return ค่า -1
+        const numbers7 = [1,2,3,4,5];
+        const firsEvenIndex = numbers7.findIndex(function(number) {
+            return number % 2 === 0;
+        });
+        console.log(firsEvenIndex);
+        // output[1]
+
+    </script>
+    
+</body>
+</html>

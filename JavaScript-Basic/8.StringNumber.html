@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // String
+        let text = "This is a string";
+        let firstName = "dot";
+        let lastName = "com";
+        let seyHi = firstName + " " + lastName; // => แบบปกติ
+        let greet = `Hello, my name is ${firstName} ${lastName}`; //Template String
+        console.log(seyHi);
+        console.log(greet);
+        console.log(greet.length); // จำนวนข้อความ(รวมเว้นวรรค)
+
+        // Template String
+        let price = 100;
+        let VAT = 0.07;
+        let totalPrice = `Total: ${(price * (1 + VAT)).toFixed(2)}`; // .toFixed(2) คือ ทศนิยม 2 ตำแหน่ง
+        console.log(totalPrice);
+
+        // Number
+        let number1 = 200;
+        let number2 = 50;
+        let sum = number1 + number2;
+        console.log(sum);
+
+    </script>
+    
+</body>
+</html>

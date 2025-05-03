@@ -1,0 +1,18 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+/* Pseudo Class => มีโคล่อนตัวเดียว*/
+a:hover {
+    background-color: rgb(201, 18, 18);
+}
+
+/* Pseudo Element => มีโคล่อนสองตัว */
+p::first-line {  /* First-line => บรรทัดแรก */
+    color: red;
+    font-size: 29px;
+    font-weight: bold;
+}

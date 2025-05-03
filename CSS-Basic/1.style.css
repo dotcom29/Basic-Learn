@@ -1,0 +1,36 @@
+/* Element Selector คือการระบุแท็กที่ต้องการตกแต่งแบบตรงๆ เช่น แท็ก <p> , <h1> */
+P {
+    color: rgb(255, 0, 0);
+    text-align: center; 
+
+    /* Element คือจะเอามาทั้งหมดที่ระบุ */
+}
+
+h1 {
+    color: black;
+    text-align: right;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+}
+
+/* class Selector */
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+/* ID Selector */
+#myBox {
+    width: 100px;
+    height: 100px;
+    background-color:aliceblue;
+    margin:10px;
+
+}

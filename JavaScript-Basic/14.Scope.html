@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> 
+    
+    // Scope ในอดีต ตัวแปรใน js จะมีแค่ Global Scope และ Function Scope แต่ในปัจจุบันจะมี Block Scope สำหรับตัวแปร let, const
+
+    // Block Scope
+    {
+        let name = "John Doe"
+        console.log(name); // console.log ภายในวงเล็บ จะเกิดผล
+    }
+    console.log(name); // console.log นอกวงเล็บ จะไม่เกิดผล
+
+    // Local Scope ตัวแปรที่ถูกสร้างภายใน Function
+    function localFunc() {
+        let carName = "Toyota"; // Local Scope
+        console.log(carName);
+    }
+    localFunc(); // เรียกใช้ฟังก์ชัน
+
+    // Function Scope
+    function myFunction() {
+        var firstName = "John";
+        let lastName = "Doe";
+        const age = 30;
+
+        console.log(firstName); // Function Scope
+        console.log(lastName); // Function Scope
+        console.log(age); // Function Scope
+    }
+    myFunction(); // เรียกใช้ฟังก์ชัน
+
+    // Global Scope คือ เข้าถึงจากตำแน่งไหนก็ได้
+        let x = 20;
+        var t = 50;
+        const u = 30;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <!-- 
+            Events คือ สิ่งที่เกิดขึ้นกับ Elenment เพื่อสร้างเหตูการ์ณหน้าเว็บ ที่ใช้บ่อยๆ เช่น
+            -onclick
+            -onchange
+            -onload
+            -onkeydown
+            -onmouseover
+            -onmouseout
+    -->
+<body id="myBody"> <!-- กำหนดค่าให้ตัว body -->
+
+    <button onclick="alert('Hello JS')">Clickme</button> <!-- สร้าง Element=button, กำหนด Event=onclick -->
+
+    <p id="myText">Change this text.</p>
+    <button id="myBtn">Click to Change text</button>
+    <button id="changeColorBtn">Change Color</button>
+
+    <script>
+
+        const button = document.getElementById("myBtn"); // function=document.getElementById เพื่อเก็บ <button id="myBtn">Click to Change text</button> ไว้ใน const button
+        const changeColorBtn = document.getElementById("changeColorBtn");
+
+        button.addEventListener("click", function() { // Event=click , function() เรียกว่า callback function สร้างเพื่อทำอะไรต่อเมื่อ click
+            const myText = document.getElementById("myText");
+            myText.textContent = "The text has been changed."; // property=textContent
+        })
+
+        changeColorBtn.addEventListener("mouseover", function() {
+            const myBody = document.getElementById("myBody");
+            myBody.style.backgroundColor = "yellow";
+        })
+
+        changeColorBtn.addEventListener("mouseout", function() {
+            const myBody = document.getElementById("myBody");
+            myBody.style.backgroundColor = "white";
+        })
+
+    </script>
+    
+</body>
+</html>

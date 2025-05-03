@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* นำ Font จาก Google มาใช้งาน */
+
+div {
+    font-family:'Courier New', Courier, monospace; /* การเปลี่ยน font ที่มีอยู่แล้ว */
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Montserrat", serif; /* นำ Font จาก Google มาใช้งาน */
+}

@@ -1,0 +1,41 @@
+/* Parent Element */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding-bottom: 2000px;
+}
+
+/* Child Element */
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /*  position: static; => ตำแหน่งคงที่ ซึ่งไม่สามารถใช้ได้กับ top , buttom , right , left ได้เพราะมันคงที่อยู่แล้ว
+        position: relative; => สัมพันกับตำแหน่ง
+        position: fixed;
+        position: absolute; => จะอยู่ในกล่องแม่(Parent Element) มักจะใช้กับ child Element เสมอ
+        position: sticky;
+        top: 20px;
+        left: 20px;
+    */
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(11, 0, 229);
+    z-index: 1; /* การทำให้สีเลื่อนมาอยู่ด้านหน้าสุด => ยิ่งค่ามากยิ่งอยู่บนสุด */
+    position: relative;
+    bottom: 30px;
+    /* opacity: 50%; => การเช็คเลเยอร์ของสีที่อยู่ด้านบนสุด*/ 
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(176, 189, 51);
+    position: relative;
+    z-index: 2; /* กำหนดให้สีเหลืองอยู่ด้านบนสุด */
+    
+}

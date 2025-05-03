@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">This is a paragraph</p>
+    <button type="button" onclick="myFunction();">Chang Content</button>
+
+    <script>
+
+        document.write("Hello World"); // document.write(); คือ การเขียนทับลงไปตรงๆ
+
+        alert("Welcome to my website"); // .alert
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World" //innerHTML , Change This is a paragraph => Hello World
+        }
+
+        console.log(document.getElementById("demo")); // console.log ไม่แสดงหน้าเว็ป แต่จะแสดงที่หน้าต่าง console , แสดงผล
+    </script>
+    
+</body>
+</html>

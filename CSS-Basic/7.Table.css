@@ -1,0 +1,22 @@
+table {
+    width: 100%;
+    border-collapse: collapse; /* กำหนดให้มีเส้นเดียว */
+}
+
+table , th , td { /* เข้าถึงแท็ก 3 ตัว */
+    border: 1px solid; /* ขอบนอก */
+}
+
+th {
+    height: 70px;
+}
+
+td {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle; /* การชิดขอบ */
+}
+
+tr:hover { /* เม้าส์ชี้ */
+    background-color: burlywood;
+}

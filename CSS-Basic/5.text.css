@@ -1,0 +1,29 @@
+div {
+    width: 500px;
+    height: 300px;
+    background-color: burlywood;
+    color: brown;
+    /* justify การยึดข้อความให้ชิดกับกล่อง */
+    text-align: justify;
+}
+
+/* การกำหนดเส้น */
+p {
+    text-decoration: line-through overline underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 3px;
+    width: 500px;
+    height: 300px;
+    background-color: burlywood;
+    color: brown;
+}
+
+h1 {
+    text-transform: lowercase; /* การกำหนดขนาดตัวหนังสือ */
+    text-indent: 50px; /* การ tap เข้า */
+    letter-spacing: 10px; /* การเว้นระยะห่างระหว่างตัวอักษร */
+    line-height: 9px; /* การเว้นระยะห่างระหว่างบรรทัด */
+    word-spacing: 10px; /*การเว้นระยะห่างระหว่างคำ*/
+    white-space: nowrap; /* ตัวหนังสือไม่ต้องหุบเข้าเวลาเราลาก inspect มาเพื่อแก้โค้ดหน้าเว็ป */
+    text-shadow: 2px 2px red; /* แกน x , แกน y , ความเบลอ */
+}

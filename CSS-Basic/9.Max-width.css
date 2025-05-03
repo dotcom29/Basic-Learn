@@ -1,0 +1,13 @@
+/*  โค้ดปกติทั่วไป ไม่ปรับตัวหนังสือตามหน้าจอ
+    .container 
+    width: 960px;
+    margin: 0 auto; บนล่าง = 0 , ซ้ายขวา = auto 
+    background-color: antiquewhite; 
+*/
+
+/* Max-width => ตามตัวหนังสือตามขนาดหน้าจอ เช่น ตอนเราลาก inspact ในหน้าเว็บเลื่อนมาโดนตัวหนังสือ */
+h1 {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,36 @@
+/* เปลี่ยนสีพื้นหลัง */
+body {
+    background-color: rgb(186, 74, 123);
+
+    /* รูปภาพจะทำซ้ำในกรณีที่รูปมีขนาดเล็ก */
+    background-image: url("https://neweracap.co.th/cdn/shop/files/860516970fd940e0b05eb2ba4589a76b.jpg?v=1712256920");
+
+    /* กำหนดให้รูปภาพไม่ทำซ้ำ */
+    background-repeat: no-repeat;
+
+    /* ปรับขนาดรูปเอง */
+    background-size: cover;
+
+    background-position: center;
+
+    /* attachment มี Fixed และ scroll */
+    background-attachment:scroll;
+
+    /* การเขีนนสั้นๆ
+        1.background-color
+        2.background-image
+        3.background-repeat
+        4.background-attachment
+        5.background-position
+
+    /* background: red url("image/pic1.jpg") no-repeat fixed center; */
+}
+
+/* ใส่รูปภาพพื้นหลัง */
+/* การใส่รูปภาพพื้นหลัง ต้องกำหนดขนาดและความสูงทุกครั้ง */
+.myBox {
+    width: 500px; 
+    height: 300px;
+    background-image: url("image/pic1.jpg");
+    background-size: cover
+}

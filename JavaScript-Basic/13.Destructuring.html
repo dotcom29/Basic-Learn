@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Destructuring = ใช้ในการแยก property ของ object แล้วทำเป็นตัวแปรได้ หรือสามารถแกะเอาข้อมูลออกจาก array ได้
+        const person = { // Object = person
+            firstName: "John",
+            lastName: "Doe",
+            age: 30
+        };
+        // 1
+        let {firstName, lastName,age} = person;
+        console.log(age, firstName,lastName)
+        // 2
+        let {firstName: fn, lastName:ln,age: a} = person; // สามารถเปลี่ยนชื่อ property ได้
+        console.log(fn, ln,a)
+        // 3
+        let {firstname, lastname,age1,country = "TH"} = person; // สามารถเพิ่มค่าได้ (DefaultValue)
+        console.log(firstname, lastname,age1,country)
+
+
+        // Array Destructuring
+        const fruits = ["Apple", "Orange", "Mango"];
+        let [fruit1, fruit2, fruit3] = fruits;
+        console.log(fruit1, fruit2, fruit3);
+
+        // 1
+        const numbers = [10, 20, 30, 40, 50, 60, 70, 80];
+        const [num1, num2, ...rest] = numbers; // num1=10, num2=20, rest=30 เป็นต้นไป
+        console.log(num1);
+        console.log(num2);
+        console.log(rest);
+
+        // 2
+        let first = "John";
+        let last = "Doe";
+
+        [first, last] = [last, first] // สลับตำแหน่ง
+        console.log(first, last);
+
+    </script>
+    
+</body>
+</html>

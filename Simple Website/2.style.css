@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    height: 60px;
+    align-items: center;
+    padding: 0 5rem;
+
+        & .logo {
+
+            & a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+
+        & .menu {
+            display: flex;
+            list-style: none;
+
+            & li {
+                margin: 0 1rem;
+
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        /* Responsive กับขนาดหน้าจอ */
+        @media screen and (max-width: 520px) { /* ให้ปรับขนาด เมื่อขนาดหน้าจอเท่ากับ 520px  */
+            flex-direction: column; /* ให้แสดงผลเป็น colum */
+            height: auto;
+            padding: 3rem 0;
+
+            & .menu {
+                margin-top: 2rem;
+                flex-direction: column;
+
+                & li {
+                    margin: 1rem 0;
+                }
+            }
+        }
+}
+
+.banner {
+    height: 600px;
+    background-image: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex; /* การต่อข้อความให้อยู่บรรทัดเดียวกัน */
+    justify-content: center; /*แกนแนวตั้ง*/
+    align-items: center; /* แกนแนวนอน */
+    text-align: center;
+}
+
+.motto {
+    background-color: cadetblue;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services {
+    background-color: #fff;
+    padding: 3rem;
+
+    & .services-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+
+        & .services-item {
+            background-color: cadetblue;
+            color: #fff;
+            padding: 1rem;
+            border-radius: 20px; /* ความโค้งมน */
+        }
+    }
+}
+
+.recent {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+
+    & .recent-left {
+        width: 50%;
+    }
+
+    & .recent-right {
+        width: 50%;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.get {
+    background-color: cadetblue;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .get-info {
+        
+        .get-link {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem; /* inline element => overlap block element */
+            display: inline-block; /* inline => block */
+            border-radius: 10px;
+            margin-top: 2%;
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    background-color:#333;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}

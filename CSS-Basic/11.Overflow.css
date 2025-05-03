@@ -1,0 +1,16 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    /* overflow: visible; => ค่า defult */
+    /* overflow: hidden; => ซ่อนเนื้อหาที่เกินกว่ากล่อง */
+    /* overflow: scroll; => เลื่อนได้ */
+    overflow: auto; /*=> หากเนื้อหาเกินกว่ากล่องจะเลื่อนได้อัตโนมัติ */
+}

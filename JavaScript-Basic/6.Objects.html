@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // objects เราสามารถสร้าง Object เพื่อเก็บค่าหลายค่าได้ มี 3 รูปแบบ
+        // ตัวอย่าง syntax : 
+        // const person = {};
+
+        // วิธีที่ 1
+        // Object Literal *** ใช้บ่อย
+        const car = {
+            make: "Mercedes-Benz", // property = make , value = "Mercedes-Benz"
+            model: "A-Class", // property = model , value = "A-Class"
+            year: 2024, // property = year , value = 2024
+            // Method = function : หากเราสร้าง function ใน Object จะเรียกว่า Method
+            displayInfo: function() { // เขียนแบบสั้นๆ => displayInfo()
+                console.log(`${this.make} ${this.model}, Year: ${this.year}`) // วิธีเรียกใช้เครื่องหมายพิเศษ(Alt+96) = ` : Template Literal or Template String
+            } // this คือ ในวงเล็บทั้งหมดของ const car
+        } 
+
+            console.log(car.make); // แสดงผล property
+            console.log(car.model); // แสดงผล property
+            car.displayInfo(); // เรียกใช้ Method
+
+        // วิธีที่ 2
+        // new Keyword
+        const date = new Date(); // การใช้ Date Object
+        console.log(date); // แสดงผล
+
+
+        // วิธีที่ 3
+        // Object Constructor
+        function Car(make, model, year) {
+            this.make = make // เก็บ make ใน this.make
+            this.model = model // เก็บ model ใน this.model
+            this.year = year // เก็บ year ใน this.year
+            // Method
+            this.displayInfo = function() {
+                console.log(`${this.make} ${this.model}, Year: ${this.year}`); // แสดงผล
+            }
+        }
+
+        const car1 = new Car("Mercedes-Benz", "S-Class", 2024); // new Keyword
+        const car2 = new Car("BMW", "3 series", 2024); // new Keyword
+
+        console.log(car1); // แสดงข้อมูล function Car
+        console.log(car2); // แสดงข้อมูล function Car
+
+        console.log(car1.make); // ให้ car1 เข้าถึง property: make , แสดงผล
+        console.log(car2.model); // ให้ car2 เข้าถึง property: model , แสดงผล
+
+        car1.displayInfo(); // แสดงค่า Method
+        car2.displayInfo(); // แสดงค่า Method
+
+    </script>
+    
+</body>
+</html>

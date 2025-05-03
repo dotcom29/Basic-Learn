@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- HTML Form -->
+    <form action="">
+        <fieldset> <!--กรอบ-->
+            <legend>Personal Info</legend> <!--การอธิบายแคปชันให้ fieldset-->
+
+            <label for="first name">First Name :</label> <br> <!--br ตือการเว้นบรรทัด-->
+            <input type="text" name="firstname" placeholder="enter your firsname"> <br>
+
+            <label for="last name">Last Name :</label> <br>
+            <input type="text" name="lastname" placeholder="enter your Lastname"> <br>
+
+            <label for="password">password</label> <br>
+            <input type="password" id="password" placeholder="enter your password" minlength="6" maxlength="15" requierd> <br>
+
+            <label for="email">email</label> <br>
+            <input type="email" id="email" placeholder="@gmail.com"> <br>
+
+            <label for="phone">phone</label> <br>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9][3]-[0-9]{4}"> <br>
+
+            <label for="title"></label>
+
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." value="Ms." name="title">
+            <label for="phD.">phD.</label>
+            <input type="radio" id="phD." value="phD." name="title"> <br>
+
+            <input type="reset">
+            <input type="submit">
+        </fieldset>
+
+        <!-- Form ต่างที่เราสามารถเลือกใช้งานได้ -->
+        <input type="button" value="button"> <br>
+        <input type="checkbox"> checkbox <br>
+        <input type="colot"> <br>
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <input type="email"><br>
+        <input type="file"><br>
+        <input type="hidden"><br>
+        <input type="image"><br>
+        <input type="month"><br>
+        <input type="number"><br>
+        <input type="password"><br>
+        <input type="radio"><br>
+        <input type="range"><br>
+        <input type="reset"><br>
+        <input type="search"><br>
+        <input type="submit"><br>
+        <input type="tel"><br>
+        <input type="text"><br>
+        <input type="time"><br>
+        <input type="url"><br>
+        <input type="week"><br>
+
+        <!-- Select -->
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="toyota">Toyota</option>
+            <option value="honda" selected>Honda</option> <!--selected คือเลือกหัวข้อที่ต้องการแสดงในหน้าเว็ปเป็นตัวเริ่มต้น-->
+            <option value="mazda">Mazda</option>
+        </select>
+
+        <!-- datalist -->
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Volvo"></option>
+            <option value="Toyota"></option>
+            <option value="Honda"></option>
+            <option value="Mazda"></option>
+        </datalist>
+
+        <!-- textarea -->
+        <textarea name="" id=""></textarea> <!--กล่องข้อความ-->
+        <button type="submit">Summit</button>
+     </form>
+    
+</body>
+</html>

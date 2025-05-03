@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // x = 5; การประกาศตัวแปรแบบอัตโนมัติ
+        // y = 10;
+        // z = x+y;
+        // console.log(z);
+
+        // var x = 5; => เลิกใช้ตั้งแต่ปี 2015 , can redecare
+        // var y = 10;
+        // var z = x+y;
+        // console.log(z);
+        /*      Global scoop คือ สามารถใช้คำสั่งนอก {} ได้
+                เช่น {
+                    var x = 5
+                }
+                consloe.log(x) => 5
+        */
+
+        // let x = 5; => can't redecare
+        // let y = 10;
+        // let z = x+y;
+        // console.log(z);
+        /*      Block scoop คือ ไม่สามารถใช้คำสั่งนอก {} ได้
+                เช่น {
+                    let x = 5
+                }
+                consloe.log(x) => error
+        */
+
+        // const x = 5; => can't redecare
+        // const y = 10;
+        // const z = x+y;
+        // console.log(z);
+        /*      Block scoop คือ ไม่สามารถใช้คำสั่งนอก {} ได้
+                เช่น {
+                    const y = 5
+                }
+                consloe.log(y) => error
+        */
+
+        let name = "dotcom" // let สามารถเปลี่ยนแปลงได้
+        name = "dotcom29"
+        console.log(name) // แสดงผล
+
+        const name1 = "dotcom" // const  ไม่สามารถเปลี่ยนแปลงได้
+        name = "dotcom29"
+        console.log(name1) // แสดงผล
+
+    </script>
+    
+</body>
+</html>

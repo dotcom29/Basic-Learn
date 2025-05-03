@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let fruits = ["apple", "banana", "orange", "grape", "mango"];
+
+        for (let i = 0; i < fruits.length; i++) { // กำหนดให้ i=0 , หาก i น้อยกว่าจำนวนข้อมูลทั้งหมดใน array , ถ้าเงื่อนไขเป็นจริง ให้ i เพิ่มจำนวน
+            console.log(fruits[i]) // แสดงผลค่าแต่ละตัว
+        }
+
+        for (let i = 1; i <= 5; i++) { // กำหนดให้ i=1 , หาก i น้อยกว่าเท่ากับ 5 ให้เพิ่มค่า i ไปเรื่อยๆ จนเงื่อนไขไม่เป็นจริง คือ i=6 ซึ่งมากกว่า 5
+            console.log("Number" + i);
+        }
+
+        // ตัวอย่าง For in Loop เป็นคำสั่งสำหรับวนรอบคุณสมบัติของวัตถุ
+        let person = {
+            name: "John Doe",
+            age: 30,
+            city: "New York"
+        }
+
+        for (let key in person) {
+            console.log(key + " : " + person[key]); // key=property , person[key]=Value
+        }
+
+        // ตัวอย่าง For of Loop สำหรับวนซ้ำของวัตถุที่ทำซ้ำได้ เช่น อาเรย์ , สตริง , อื่นๆ
+        let cars = ["Honda", "Toyota", "Nissan"];
+        for (let car of cars) {
+            console.log(car);
+        }
+
+        // ตัวอย่าง while loop ใช้สำหรับประมวลผลโค้ดตราบใดที่เงื่อนไขเป็นจริง
+        let i = 0;
+        while (i < 5) {
+            console.log(i);
+            i++; // เพิ่มค่า i
+        }
+
+        // do while loop คล้ายกับ wjile loop แต่จะดำเนินการหนึ่งครั้งก่อนที่จะตรวจสอบเงื่อนไข
+        let x = 0;
+        do {
+            console.log(x);
+            x++; // เพิ่มค่า x
+        } while (x<5);
+
+        do {
+            console.log(x);
+            x++; // เพิ่มค่า x
+        } while (x>5); // x ไม่มากกว่า 5 แน่นอน
+    </script>
+
+    
+</body>
+</html>

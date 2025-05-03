@@ -1,0 +1,17 @@
+p {
+    display: inline; /* เปลี่ยนจาก Block Element => inline Element */
+    outline: 1px solid red; /* width check */
+}
+
+span {
+    display: block; /* เปลี่ยนจาก inline Element => Block Element */
+    outline: 1px solid red;
+} 
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* display: none; ทำให้กล่องสีแดงหายไปเลย */
+    visibility: hidden; /* ซ่อนแต่ไม่ได้หายไป */
+}

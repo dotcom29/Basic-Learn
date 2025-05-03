@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // การใช้ this keyword ใน object
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            fullName() {
+                return this.firstName + " " + person.lastName; // this อ้างอิงถึง person , สามารถใช้ได้ทั้ง this. และ person. แต่การใช้ this นั้นสั้นกว่า
+            }
+        }
+        console.log(person.fullName());
+
+        // การใช้ this keyword เปล่าๆ
+        console.log(this); // จะได้ window object
+        // window.alert("Hello World"); // ตัวอย่างการใช้ window object
+
+        // การใช้ this keyword กับ Function
+        function myFunc() {
+            console.log("this inside a function", this);
+        }
+        myFunc(); // เรียกใช้ function
+
+    </script>
+
+    <!-- การใช้ this กับ HTML Element -->
+     <button onclick="this.style.display='none';">Click to remove</button> <!-- การใช้ this เพื่ออ้างอิงถึง button -->
+    
+</body>
+</html>
