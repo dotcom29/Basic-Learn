@@ -1,20 +1,20 @@
 import './App.css';
 import AppHeader from './component/AppHeader';
+import tattoos from './component/data/Tattoos';
 import TattooItem from './component/TattooItem';
 
-const tattoo1 = {
-    title: "ลายสักที่มือ",
-    thumbnailUrl: "image/tattoo1.jpg"
-};
-
 function App() {
-  return (
+    // eslint-disable-next-line no-unused-vars
+    const tattooElements = tattoos.map((tattoo, index) => {
+        return <TattooItem key={index} tattoo={tattoo} />;
+    })
+    return (
     <div className="app">
         {/* เรียกใช้งาน appHeader */}
         <AppHeader />
         
         <div className="app-grid">
-            <TattooItem tattoo={tattoo1} />
+            {tattooElements}
         </div>
     </div>
   );
