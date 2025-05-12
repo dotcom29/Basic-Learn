@@ -1,11 +1,11 @@
 import './TattooItem.css'
 
 function TattooItem(props) {
-    const { title, thumbnailUrl } = props;
+    const { tattoo } = props;
     return(
         <div className="tattoo-item">
-            <img src={thumbnailUrl} alt=""/>
-            <h4>{title}</h4>
+            <img src={tattoo.thumbnailUrl} alt=""/>
+            <h4>{tattoo.title}</h4>
         </div>
     );
 };
