@@ -1,9 +1,9 @@
-/* eslint-disable jsx-a11y/alt-text */
+import './TattooItem.css'
 
 function TattooItem() {
     return(
         <div className="tattoo-item">
-            <img src="/image/tattoo1.jpg" />
+            <img src="/image/tattoo1.jpg" alt="" />
             <h4>ต่ายน้อย 1</h4>
         </div>
     );

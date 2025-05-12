@@ -1,10 +1,9 @@
-/* eslint-disable jsx-a11y/alt-text */
-// การสร้าง Component
+import './Appheader.css'
 
 function AppHeader() {
     return (
         <header className="app-header">
-            <img className="app-header-logo" src='/image/logo.jpg' />
+            <img className="app-header-logo" src='/image/logo.jpg' alt="" />
         </header>
     );
 };
